@@ -1,0 +1,200 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Coming Soon', cursive;
+  line-height: 1.6;
+  background-color: #F0EBE1;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+header {
+  width: 100%;
+  background-color: #BCDBC3;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+.language-btn {
+  font-family: 'JetBrains Mono', monospace;
+  position: absolute;
+  right: 20px;
+  background-color: #A1BFA8;
+  border: none;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.language-btn:hover {
+  background-color: #92AD99;
+}
+
+/* Banner */
+.banner {
+  width: 100%;
+  background-color: #BCDBC3;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.banner-logo {
+  max-width: 300px;
+  height: auto;
+}
+
+a {
+  color: inherit; 
+  text-decoration: none; 
+}
+
+a:hover {
+  text-decoration: underline; 
+  color: #666;
+}
+
+/* Filters */
+.filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.filter button {
+  font-family: 'DynaPuff', cursive;
+  background-color: #A1BFA8;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter button:hover {
+  background-color: #92AD99;
+}
+
+/* Card container */
+.villager-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background-color: #DCEBF0;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.villager-card {
+  background-color: #FFFDF8;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.villager-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.villager-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.villager-card h3 {
+  font-family: 'Coming Soon', cursive;
+  font-size: 1rem;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.villager-card p {
+  font-family: 'Coming Soon', cursive;
+  font-size: 0.9rem;
+  color: #666;
+}
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #cce2dc;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #BCDBC3;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer-links button {
+  font-family: 'JetBrains Mono', monospace;
+  background-color: #A1BFA8;
+  border: none;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-links button:hover {
+  background-color: #92AD99;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filter {
+    justify-content: center;
+  }
+}
